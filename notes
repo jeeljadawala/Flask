@@ -1,0 +1,19 @@
+pip install virtualenv
+virtualenv demoProject 
+
+- virtual env helps to create an env limited to project so it doent interfere main system setting .
+for eg i want to use a v1.1 of a particular lib for one project and v1.8 for another. Thats where virtualenv helps.
+
+-sometimes scripts dont execute so run the command if error in creating virtualenv :
+Set-ExecutionPolicy unrestricted ----> yestoall
+
+-enter virtualenv activate
+.\demoProject\Scripts\activate.ps1     (ps1 - powershell)
+
+-install flask in demoProject(name as env usually)
+pip install flask
+
+-flask minimal app and paste contents to app.py 
+https://flask.palletsprojects.com/en/2.0.x/quickstart/
+
+- render_template : used to render html pages
