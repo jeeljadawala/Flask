@@ -7,7 +7,7 @@ for eg i want to use a v1.1 of a particular lib for one project and v1.8 for ano
 -sometimes scripts dont execute so run the command if error in creating virtualenv :
 Set-ExecutionPolicy unrestricted ----> yestoall
 
--enter virtualenv activate
+-enter virtualenv to activate
 .\demoProject\Scripts\activate.ps1     (ps1 - powershell)
 
 -install flask in demoProject(name as env usually)
@@ -31,3 +31,30 @@ use sqlite ---> no need to install ----> "sqlite:///notes.db"
 
 - open sqlite viewer online  --->   https://inloop.github.io/sqlite-viewer/ ---> drag and drop db to viewer
 
+-install "jinja2 snippet kit " extension in vscode ---> its a jinja template
+
+for using for loop in index.html : just type jfor (functionality of jinja ) and for loop will be generated so it makes easy to code 
+
+-- inheritance of navbar from base.html to index.html and  update.html
+
+- use of static folder--->   <script src="{{ url_for('static', filename='js/test.js') }}"></script> in base.html
+   |
+   similarly css file can be added
+
+- deploy on heroku 
+https://dashboard.heroku.com/terms-of-service
+|
+install heroku cli --->after that --> close vscode ---> restart vscode ---> type heroku -->type heroku login
+
+---> initialize git repo if not done 
+
+
+
+
+
+- install gunicorn : pip install gunicorn : helps you to serve application in multiple threads,
+then 
+
+pip freeze > requirements.txt  ---> list all requirements of project to a file , good practice
+
+-create a Procfile -- it will be used by heroku
