@@ -17,3 +17,17 @@ pip install flask
 https://flask.palletsprojects.com/en/2.0.x/quickstart/
 
 - render_template : used to render html pages
+
+- https://getbootstrap.com/ ----> starter template copy to index.html --->add navbar
+
+<div class="container my-3"> --> margin standing 3
+container-float ---> occupies entire width
+
+- pip install flask-sqlalchemy
+https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/
+
+| 
+use sqlite ---> no need to install ----> "sqlite:///notes.db"
+
+- open sqlite viewer online  --->   https://inloop.github.io/sqlite-viewer/ ---> drag and drop db to viewer
+
