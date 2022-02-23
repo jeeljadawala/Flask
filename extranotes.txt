@@ -46,6 +46,20 @@ https://dashboard.heroku.com/terms-of-service
 |
 install heroku cli --->after that --> close vscode ---> restart vscode ---> type heroku -->type heroku login
 
+
+
+
+
+- install gunicorn : pip install gunicorn : helps you to serve application in multiple threads,
+then 
+
+pip freeze > requirements.txt  ---> list all requirements of project to a file , good practice
+
+-create a Procfile -- it will be used by heroku
+
+
+
+
 ---> initialize git repo if not done 
 then , type heroku create mynotes-flask-jeel
 
@@ -60,12 +74,3 @@ https://mynotes-flask-jeel.herokuapp.com/
 
 
 
-
-
-
-- install gunicorn : pip install gunicorn : helps you to serve application in multiple threads,
-then 
-
-pip freeze > requirements.txt  ---> list all requirements of project to a file , good practice
-
--create a Procfile -- it will be used by heroku
