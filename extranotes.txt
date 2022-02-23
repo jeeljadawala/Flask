@@ -54,6 +54,8 @@ git push heroku master
 |
 done
 
+note : everytime you update project--> push to git and push heroku master
+
 https://mynotes-flask-jeel.herokuapp.com/
 
 

@@ -15,7 +15,7 @@ class Notes(db.Model):
     date_created = db.Column(db.DateTime,default = datetime.utcnow)
 
     def __repr__(self) -> str:
-        return f"{self.title}"
+        return f"{self.srNo}-{self.title}"
 
 
 @app.route("/", methods=['post','get']) # need to pass he type of req used in func 
@@ -55,6 +55,7 @@ def update(srNo):
         return redirect("/")
         
     note = Notes.query.filter_by(srNo=srNo).first()
+    print(note)
     return render_template('update.html', note=note)
 
 @app.route('/delete/<int:srNo>')
