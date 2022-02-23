@@ -47,6 +47,15 @@ https://dashboard.heroku.com/terms-of-service
 install heroku cli --->after that --> close vscode ---> restart vscode ---> type heroku -->type heroku login
 
 ---> initialize git repo if not done 
+then , type heroku create mynotes-flask-jeel
+
+git remote -v
+git push heroku master
+|
+done
+
+https://mynotes-flask-jeel.herokuapp.com/
+
 
 
 
