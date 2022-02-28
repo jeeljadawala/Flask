@@ -11,7 +11,7 @@ db=SQLAlchemy(app)
 class Notes(db.Model):
     srNo = db.Column(db.Integer, primary_key=True)
     title= db.Column(db.String(200), nullable = False)
-    desc = db.Column(db.String(500))
+    desc = db.Column(db.String)
     date_created = db.Column(db.DateTime,default = datetime.utcnow)
 
     def __repr__(self) -> str:
@@ -55,7 +55,7 @@ def update(srNo):
         return redirect("/")
         
     note = Notes.query.filter_by(srNo=srNo).first()
-    print(note)
+    print("-----------",note)
     return render_template('update.html', note=note)
 
 @app.route('/delete/<int:srNo>')
